@@ -1,5 +1,5 @@
 # this defines the server resource with most configuration options
-resource "kamatera_server" "my_server" {
+resource "kamatera_server" "dashaun" {
   name          = "bootiful${formatdate("DD_MMM_YYYY_hh_mm_ZZZ", timestamp())}"
   datacenter_id = data.kamatera_datacenter.datacenter.id
   cpu_type      = "A"
@@ -7,7 +7,7 @@ resource "kamatera_server" "my_server" {
   ram_mb        = 2048
   disk_sizes_gb = [20]
   billing_cycle = "hourly"
-  image_id      = data.kamatera_image.my_image.id
+  image_id      = data.kamatera_image.ubuntu_image.id
   ssh_pubkey    = var.ssh_public_key
 
   connection {

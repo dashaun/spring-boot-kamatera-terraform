@@ -20,7 +20,7 @@ terraform plan
 # Apply the Terraform, ETC < 5min
 terraform apply -auto-approve
 # Access the Spring Boot application using the newly created server
-curl $(terraform output -raw public_ips):8080/actuator/health | jq .
+curl $(terraform output -raw ip_address):8080/actuator/health | jq .
 ```
 
 ## Cleanup
