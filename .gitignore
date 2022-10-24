@@ -1,0 +1,4 @@
+.terraform*
+.envrc
+.idea
+terraform.tfstate*
