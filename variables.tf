@@ -2,6 +2,7 @@ variable "ssh_public_key" {
   description = "SSH public key to allow access to the server without a password"
   type        = string
   nullable    = false
+  sensitive   = true
 }
 
 variable "ssh_private_key" {
