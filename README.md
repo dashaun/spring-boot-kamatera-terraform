@@ -6,8 +6,8 @@ Deploys a [Spring Boot Docker image](https://hub.docker.com/r/dashaun/spring-boo
 
 ```bash
 #clone the repository
-git clone https://github.com/dashaun/spring-to-production-kamatera
-cd spring-to-production-kamatera
+git clone https://github.com/dashaun/spring-boot-kamatera-terraform
+cd spring-boot-kamatera-terraform
 # configure Terraform with your credentials
 export KAMATERA_API_CLIENT=...
 export KAMATERA_API_SECRET=...
